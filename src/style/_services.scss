@@ -1,0 +1,54 @@
+.services {
+    padding: 50px 0 0;
+    h3.kaushan {
+        text-align: center;
+        font-size: 24px;
+        padding-bottom: 25px;
+    }
+    h2.services_title {
+        text-align: center;
+        font-size: 30px;
+    }
+    hr.hr_red {
+        margin: 40px auto 60px;
+    }
+    .wrapper {
+        text-align: left;
+        display: flex;
+        padding: 0 30px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: relative;
+        >div {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            padding-left: 60px;
+            padding-right: 25px;
+            width: calc(100%/3);
+            margin: 0px auto 100px;
+            width: calc(100%/3);
+            svg.services_item__icon {
+                position: absolute;
+                width: 35px;
+                height: 35px;
+                fill: #95e1d3;
+                left: 0;
+                top: 0;
+            }
+            >div {
+                h3.services_title {
+                    font-size: 14px;
+                    padding-bottom: 10px;
+                    font-weight: 700;
+                    color: #333333;
+                }
+                p.services_text {
+                    font-size: 15px;
+                    color: #999999;
+                    font-family: Roboto;
+                }
+            }
+        }
+    }
+}

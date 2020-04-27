@@ -1,0 +1,124 @@
+.team {
+    .team_container.wrapper {
+        padding: 0px 0 155px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        h3.team_upper_title {
+            font-size: 24px;
+            padding-bottom: 24px;
+        }
+        h2.team_title {
+            font-size: 30px;
+        }
+        p.team_description__text {
+            font-size: 15px;
+            line-height: 30px;
+            color: #999999;
+            padding-bottom: 100px;
+        }
+        .about_div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            position: relative;
+            .about_item {
+                width: 30%;
+                position: relative;
+                a {
+                    display: flex;
+                    svg.team__social_icon {
+                        transition: all .1s ease-out;
+                        fill: #f38181;
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+                &:hover {
+                    cursor: pointer;
+                    .about_img {
+                        transform: translate(-10px, -10px);
+                        box-shadow: 10px 10px 1px 0px rgba(149, 225, 211, 1);
+                        img {
+                            opacity: .2;
+                        }
+                    }
+                    .about_text {
+                        opacity: 1;
+                    }
+                }
+                .about_img {
+                    z-index: 2;
+                    cursor: pointer;
+                    background: linear-gradient(to bottom, #f38181, #fce38a);
+                    width: 100%;
+                    img {
+                        display: block;
+                        width: 100%;
+                    }
+                }
+            }
+            .about_text {
+                position: absolute;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                font-size: 18px;
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: 700;
+                margin: auto;
+                top: -1em;
+                bottom: 0;
+                left: 0%;
+                right: 0;
+                opacity: 0;
+                color: white;
+                .icon_div {
+                    width: 55px;
+                    height: 55px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: #fce38a;
+                    border-right: 1px solid #f38181;
+                    box-sizing: border-box;
+                    &:last-of-type {
+                        border-right: none;
+                    }
+                    &:hover {
+                        background: #f38181;
+                        a {
+                            svg {
+                                fill: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+            .desc_emp {
+                padding-top: 30px;
+                margin: auto;
+                height: 0;
+                h4.desc_title {
+                    font-size: 14px;
+                    font-family: Montserrat;
+                    text-transform: uppercase;
+                    padding-bottom: 12px;
+                }
+                p.employee_desc {
+                    font-size: 15px;
+                    font-family: Roboto;
+                    font-style: italic;
+                    font-weight: 400;
+                    margin: 0;
+                    padding: 0 0 85px;
+                    color: #999999;
+                }
+            }
+        }
+    }
+}
